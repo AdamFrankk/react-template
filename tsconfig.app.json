@@ -1,0 +1,25 @@
+{
+    "include": [
+      "env.d.ts",
+      "src/**/*",
+      "src/**/*.ts",
+      "src/**/*.tsx",
+    ],
+    "exclude": [
+      "src/**/__tests__/*"
+    ],
+    "compilerOptions": {
+      "jsx": "react-jsx",
+      "allowImportingTsExtensions": true,
+      "noEmit": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "composite": true,
+      "baseUrl": ".",
+      "paths": {
+        "@/*": [
+          "./src/*"
+        ]
+      }
+    }
+  }
